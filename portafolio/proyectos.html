@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Danunezes</title>
+    <link rel="icon" type="image/png" href="./assets/img/OIG3.m9O.JjF0.jpeg">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Contenedor para el navbar -->
+    <div id="navbar"></div>
+
+    <!-- Script para cargar el navbar -->
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el navbar:', error));
+    </script>
+   
+    <!-- Resto del contenido de la página -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Proyectos</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4 Proyectos">
+                <div class="card project-card ">
+                    <img src="./assets/img/Springboot.jpg" class="card-img-top " alt="Proyecto con Springboot">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto con Springboot</h5>
+                        <p class="card-text">Proyecto con arquitectura maven</p>
+                        <a href="https://github.com/Dayanna-NE/Sprintm6Springboot" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 Proyectos">
+                <div class="card project-card">
+                    <img src="./assets/img/calculadora.jpg" class="card-img-top " alt="Calculadora JS">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora</h5>
+                        <p class="card-text">Calculadora con JS</p>
+                        <a href="https://github.com/Dayanna-NE/calculadora.frontend" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 Proyectos">
+                <div class="card project-card">
+                    <img src="./assets/img/realidad.jpg" class="card-img-top " alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto realidad aumentada  </h5>
+                        <p class="card-text">Cración de un museo virtual</p>
+                        <a href="#" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
